@@ -1,0 +1,128 @@
+@charset 'utf-8';
+*{padding:0;margin:0;}
+a{
+    color:inherit; 
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+.wrap{
+    width:980px;
+    height:78px;
+    margin:0 auto;
+    position: relative;
+    }
+header ul{position: absolute;top:30px; right:0;}
+header li{
+    float: left;
+    margin-left:20px;
+    padding-left:20px;
+    font-size:18px;
+    /* 위에 폰트사이즈 30으로하니까 너무 커져서 
+    최대한 언니가 보내주신 페이지랑 똑같이 하려고 줄여가다보니
+    18px이 되었어용,,, */
+    background-image:url(../images/line.jpg);
+    background-repeat:no-repeat;
+    background-position:0 center}
+header li:first-child{margin:0;background-image:none;}
+header ul:after{content:"";clear:both;display:block;}
+header a {color:inherit;text-decoration:none;}
+.slider a{background-image: url(../images/slider1.png);
+    display:block;
+    width:100%; height: 600px;
+    /* background-size:100%; */
+    background-position: center;background-size:cover;
+    /* background-repeat: no-repeat; */}
+
+.information h3{color:#b3917c;
+    font-size:24px;font-weight: lighter;
+    text-align:center;
+    margin-top:40px;}
+.information .item{float:left;
+    /* border:solid; */
+    width:326px;
+    text-align:center;
+    margin-top:30px;}
+.information .container:after{content:"";
+display:block; clear:both;}
+.title{font-size:18px; color:black; font-weight:bolder;
+    margin-top:10px;}
+.info{font-size: 13px; color:black;}
+
+.gallery{width:100%; height: 375px;
+    background-image: url(../images/main.jpg);
+    margin-top:40px;
+    display:inline-block;
+    /* 위에 디스플레이 왜 해주는지 모르겠으 */}
+.gallery h3{color:white;
+    font-size:24px;font-weight: lighter;
+    text-align:center;
+    margin-top:30px;}
+.gallery .item{float:left;
+    /* width:326px;
+    text-align:center;
+    margin-top:30px; */}
+.gallery .container:after{content:"";display:block; clear:both;}
+.gallery .container{width:966px; height:270px;
+    margin-top:30px;}
+.video{width:470px; height:270px; margin-right:15px;}
+.thumb{width:481px; height:265px;}
+.thumb a{display:block;
+    width:157px; height:130px;
+    margin-left:5px; margin-top:5px;
+    float:left;}
+.thumb:after{content:""; display:block; clear:both;}
+.thumb a img{width:100%; height: 100%;}
+/* 백그라운드가 아니라 html 이미지에서 넣어준거라서 */
+.thumb a:first-child{margin-left:0;}
+.thumb a:nth-child(4){margin-left:0;}
+
+footer{background-color:#171717;
+    /* 클래스가 아니라 풋터태그에 배경해줘야함 - 안그러면 980만큼만 배경이 칠해진다. */
+    height: 200px;
+    /* 높이는 footer에 줘야함} */}
+.box {width:326px; float:left;}
+.footer:after{content:""; display:block; clear:both;}
+h4{color:#b3917c; font-size:16px;}
+/* p{font-size:16px;} */
+
+/* a{
+    color:white; font-size:16px;
+    text-decoration:none;
+    링크에 대한 밑줄(색) 무효화 - 모든 a태그에 적용
+} */
+
+.yellow{color:yellow; font-size:16px;
+    margin-top:15px; 
+    font-weight: border;
+/* border보다 더 진하게 하려면, html에서 strong태그 사용 */}
+.white{color:white; font-size:16px; font-weight: border;
+    margin-top:16px;}
+address{color:#ababab; font-size:12px; font-style:normal;}
+
+footer li{
+    float:left;
+}
+footer ul:after{content:""; display:block; clear:both;}
+
+    /* 박스를 선택해줘야 글씨 뒷부분이 ...으로 변할텐데 박스선택을 어떻게 하나용? */
+
+.text li{
+    width:220px;
+    color:#ababab; font-size:12px;
+    /* margin-left:0; */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;}
+.image a{
+    margin:15px;
+    display:inline-block;
+    margin-top:15px;}
+    
+footer .text li:before{
+    content:"· "
+}
+footer .text li:hover{
+    text-decoration:underline;
+}
